@@ -21,35 +21,17 @@ rails c
 
 ## Quelques petites commandes relatives aux programme:
 
-Avoir tous les Utilisateurs:
+Avoir tous les cours:
 ```
-tp User.all
-```
-
-Avoir tous les liens :
-```
-tp Link.all
+tp Course.all
 ```
 
-Avoir tous les commentaires de niveau 1 (liés à un "link")
+Avoir tous les élèves:
 ```
-#Les commentaires de niveau 1 ne sont pas liés à des commentaires
-tp Comment.where(comment: nil)
-```
-
-Avoir tous les commentaires de niveau 2 (liés à un commentaire)
-```
-#Les commentaires de niveau 2 sont liés à des commentaires et non à des liens
-tp Comment.where(link :nil)
+tp Student.all
 ```
 
-Avoir tous les commentaires de niveau 1 du premier lien :
+Avoir tous les élèves inscrits au premier cours
 ```
-tp Comment.where(link: Link.first)
+tp Course.first.students
 ```
-
-Avoir tous les commentaires de niveau 2 du premier lien :
-```
-tp Comment.where(comment: Comment.where(link: Link.first))
-```
-
