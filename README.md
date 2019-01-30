@@ -19,7 +19,7 @@ cd s4r1_The_Hacking_Class
 rails c
 ```
 
-## Quelques petites commandes relatives aux programme:
+## Quelques petites commandes relatives au programme:
 
 Avoir tous les cours:
 ```
